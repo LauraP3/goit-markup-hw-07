@@ -14,37 +14,47 @@
 
   <body>
     <div class="container">
-      <header class="heading-box">
-        <a href="index.html" class="logo header"
-          >Web<span class="secondary-word-header">Studio</span></a
+      <header class="page-header">
+        <a href="index.html" class="logo"
+          >Web<span class="logo__right-word--black">Studio</span></a
         >
         <nav>
-          <ul class="nav-link">
-            <li class="home-button">
+          <ul class="navigation">
+            <li class="navigation__item">
               <a class="link" href="index.html">Studio</a>
             </li>
-            <li class="home-button">
-              <a class="link portofolio" href="portofolio.html">Portofolio</a>
+            <li class="navigation__item">
+              <a class="link link--highlight-header" href="portofolio.html"
+                >Portofolio</a
+              >
             </li>
-            <li class="home-button">
+            <li class="navigation__item">
               <a class="link" href="contacts.html">Contacts</a>
             </li>
           </ul>
         </nav>
-        <div class="cta">
-          <div class="email active">
-            <svg class="email-icon active" width="16px" height="12px">
+        <div class="page-header__contact">
+          <div class="page-header__contact-item">
+            <svg class="page-header__contact-icon" width="16px" height="12px">
               <use href="./Icons/symbol-defs.svg#icon-envelope"></use>
             </svg>
-            <a href="mailto:info@devstudio.com" class="link contact"
+            <a
+              href="mailto:info@devstudio.com"
+              class="link link--primary-heading-color"
               >info@devstudio.com</a
             >
           </div>
-          <div class="phone active">
-            <svg class="phone-icon active" width="10px" height="16px">
+          <div class="page-header__contact-item">
+            <svg
+              class="page-header__contact-icon page-header__contact-icon--center"
+              width="10px"
+              height="16px"
+            >
               <use href="./Icons/symbol-defs.svg#icon-smartphone"></use>
             </svg>
-            <a href="tel:+12127724150" class="link contact">+1 212-772-4150</a>
+            <a href="tel:+12127724150" class="link link--primary-heading-color"
+              >+1 212-772-4150</a
+            >
           </div>
         </div>
       </header>
@@ -236,38 +246,41 @@
           </div>
         </section>
       </main>
-      <footer class="contact-details">
-        <a class="logo footer" href="index.html"
-          ><span class="primary-word">Web</span
-          ><span class="secondary-word-footer">Studio</span></a
+      <footer class="page-footer">
+        <a class="logo" href="index.html"
+          >Web<span class="logo__right-word--white">Studio</span></a
         >
-        <div class="footer-details">
-          <address>
-            <p class="business-address">695 Park Ave, NY 10065, USA</p>
-            <a href="mailto:info@devstudio.com" class="footer-links"
+        <div class="container-footer">
+          <address class="address-block">
+            <p class="address-block__information">
+              695 Park Ave, NY 10065, USA
+            </p>
+            <a class="link link--footer" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
-            <a href="tel:+12127724150" class="footer-links">+1 212-772-4150</a>
+            <a class="link link--footer" href="tel:+12127724150"
+              >+1 212-772-4150</a
+            >
           </address>
-          <div class="find-us">
-            <h3 class="find-us-title">Find us on</h3>
-            <div class="social-icon-list-footer">
-              <div class="social-icon-footer">
+          <div class="page-footer__social">
+            <h3 class="page-footer__social-label">Find us on</h3>
+            <div class="page-footer__social-grid">
+              <div class="page-footer__social-icon">
                 <svg class="icon-footer" width="20px" height="20px">
                   <use href="/Icons/symbol-defs.svg#icon-instagram-2"></use>
                 </svg>
               </div>
-              <div class="social-icon-footer">
+              <div class="page-footer__social-icon">
                 <svg class="icon-footer" width="20px" height="16.25px">
                   <use href="/Icons/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </div>
-              <div class="social-icon-footer">
+              <div class="page-footer__social-icon">
                 <svg class="icon-footer" width="20px" height="20px">
                   <use href="/Icons/symbol-defs.svg#icon-facebook-1"></use>
                 </svg>
               </div>
-              <div class="social-icon-footer">
+              <div class="page-footer__social-icon">
                 <svg class="icon-footer" width="20px" height="20px">
                   <use href="/Icons/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
@@ -275,12 +288,20 @@
             </div>
           </div>
           <form class="subscription-form" name="news_subscription">
-            <label class="subsciption-field">
-              <span class="subscription-form-title">Subscribe to the newsletter</span>
-              <input class="field" type="email" name="subscriber" placeholder="E-mail"> 
-            </label class="subsciption-field">
-            <button class="btn-subscribe" type="submit">Subscribe 
-              <svg class="subscribe-icon" width="24" height="24">
+            <label>
+              <span class="subscription-form__label"
+                >Subscribe to the newsletter</span
+              >
+              <input
+                class="subscription-form__field"
+                type="email"
+                name="subscriber"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscription-form__btn" type="submit">
+              Subscribe
+              <svg class="subscription-form__btn-icon" width="24" height="24">
                 <use href="/Icons/symbol-defs.svg#icon-subscribe"></use>
               </svg>
             </button>
