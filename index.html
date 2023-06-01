@@ -361,7 +361,7 @@
               </div>
             </div>
           </div>
-          <form class="subscription-form" name="news_subscription">
+          <form class="subscription-form">
             <label>
               <span class="subscription-form__label">Subscribe to the newsletter</span>
               <input class="subscription-form__field" type="email" name="email" placeholder="E-mail"> 
@@ -377,45 +377,45 @@
     </div>
   </div>
     <!-- Modal-->
-    <div class="modal is-hidden" data-modal>
-      <div class="modal-content">
-        <button data-modal-close class="close-btn">
+    <div class="request-service__modal" data-modal>
+      <div class="request-service__modal-content">
+        <button data-modal-close class="request-service__close-btn">
           <svg width="11" height="11">
             <use href="/Icons/symbol-defs.svg#icon-close_btn"></use>
         </button>
-        <form class="mdl-form">
-          <div role="group" aria-labelledby="modal-form" class="modal-form">
-            <p class="form-title" id="modal-form">Leave your information and we'll call you back</p>
-            <label class="form-field">
+        <form class="request-service__form">
+          <div role="group" aria-labelledby="request-service__modal-form" class="request-service__modal-form">
+            <p class="request-service__form-title" id="request-service__modal-form">Leave your information and we'll call you back</p>
+            <label class="request-service__label">
               Name
-              <input class="insert area" type="text" name="full name" minlength="3" maxlength="50"/>
-              <svg class="form-icon" width="12" height="12">
+              <input class="request-service__input request-service__input--area-size" type="text" name="full name" minlength="3" maxlength="50"/>
+              <svg class="request-service__input-icon" width="12" height="12">
                 <use href="/Icons/symbol-defs.svg#icon-person-black-18dp-1"></use>
               </svg>
             </label>
-            <label class="form-field">
+            <label class="request-service__label">
               Telephone
-              <input class="insert area" type="tel" name="telephone" minlength="6" maxlength="15">
-              <svg class="form-icon" width="13" height="13">
+              <input class="request-service__input request-service__input--area-size" type="tel" name="telephone" minlength="6" maxlength="15">
+              <svg class="request-service__input-icon" width="13" height="13">
                 <use href="/Icons/symbol-defs.svg#icon-phone_form"></use>
               </svg>
-            </label>
-            <label class="form-field">
+            </label class="request-service__label">
+            <label class="request-service__label">
               E-mail
-              <input class="insert area" type="email" name="email" minlength="3" maxlength="50">
-              <svg class="form-icon" width="15" height="12">
-                <use href="/Icons/symbol-defs.svg#icon-emai_form""></use>
+              <input class="request-service__input request-service__input--area-size" type="email" name="email" minlength="3" maxlength="50">
+              <svg class="request-service__input-icon" width="15" height="12">
+                <use href="/Icons/symbol-defs.svg#icon-emai_form"></use>
               </svg>
             </label>
-            <label class="form-field">
+            <label class="request-service__label">
               Comments
-              <textarea class="insert text" name="comments" rows="5" placeholder="Enter the text"></textarea>
+              <textarea class="request-service__input request-service__input--textbox-size" name="comments" rows="5" placeholder="Enter the text"></textarea>
             </label>
-            <label class="form-field checkbox" >
-              <input class="insert check" type="checkbox" name="terms and conditions" required>
-              I agree with the letter and accept the&nbsp;<a class="terms" href="">Terms and Conditions</a>
+            <label class="request-service__checkbox" >
+              <input class="request-service__input request-service__input--checkbox-size" type="checkbox" name="terms and conditions" required>
+              I agree with the letter and accept the&nbsp;<a class="request-service__input--space" href="">Terms and Conditions</a>
             </label>
-            <button type="submit" class="btn-submit">Send</button>
+            <button type="submit" class="request-service__btn-submit">Send</button>
           </div>
         </form>
     </div>
