@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
 
   <body>
@@ -31,6 +31,7 @@
             </li>
           </ul>
         </nav>
+
         <div class="page-header__contact">
           <div class="page-header__contact-item">
             <svg class="page-header__contact-icon" width="16px" height="12px">
@@ -143,7 +144,7 @@
           </div>
         </div>
 
-        <section class="team_section">
+        <section class="team-section">
           <h2 class="subtitle">Our Team</h2>
           <div class="team-section__list">
             <div class="team-section__card">
@@ -155,7 +156,7 @@
               />
               <h3 class="team-section__card-title">Christopher Walker</h3>
               <p class="team-section__job">Product Designer</p>
-              <div class="team-section__team-section__icon-list">
+              <div class="team-section__icon-list">
                 <div class="team-section__icon">
                   <svg class="icon" width="20px" height="20px">
                     <use href="/Icons/symbol-defs.svg#icon-instagram-2"></use>
@@ -187,7 +188,7 @@
               />
               <h3 class="team-section__card-title">Kylie Evans</h3>
               <p class="team-section__job">Frontend Developer</p>
-              <div class="team-section__team-section__icon-list">
+              <div class="team-section__icon-list">
                 <div class="team-section__icon">
                   <svg class="icon" width="20px" height="20px">
                     <use href="/Icons/symbol-defs.svg#icon-instagram-2"></use>
@@ -219,7 +220,7 @@
               />
               <h3 class="team-section__card-title">Ryan Harris</h3>
               <p class="team-section__job">Marketing</p>
-              <div class="team-section__team-section__icon-list">
+              <div class="team-section__icon-list">
                 <div class="team-section__icon">
                   <svg class="icon" width="20px" height="20px">
                     <use href="/Icons/symbol-defs.svg#icon-instagram-2"></use>
@@ -251,7 +252,7 @@
               />
               <h3 class="team-section__card-title">Tyler Moore</h3>
               <p class="team-section__job">UI Designer</p>
-              <div class="team-section__team-section__icon-list">
+              <div class="team-section__icon-list">
                 <div class="team-section__icon">
                   <svg class="icon" width="20px" height="20px">
                     <use href="/Icons/symbol-defs.svg#icon-instagram-2"></use>
@@ -339,22 +340,22 @@
           <div class="page-footer__social">
             <h3 class="page-footer__social-label">Find us on</h3>
             <div class="page-footer__social-grid">
-              <div class="page-footer__team-section__icon">
+              <div class="page-footer__team-section-icon">
                 <svg class="icon-footer" width="20px" height="20px">
                   <use href="/Icons/symbol-defs.svg#icon-instagram-2"></use>
                 </svg>
               </div>
-              <div class="page-footer__team-section__icon">
+              <div class="page-footer__team-section-icon">
                 <svg class="icon-footer" width="20px" height="16.25px">
                   <use href="/Icons/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </div>
-              <div class="page-footer__team-section__icon">
+              <div class="page-footer__team-section-icon">
                 <svg class="icon-footer" width="20px" height="20px">
                   <use href="/Icons/symbol-defs.svg#icon-facebook-1"></use>
                 </svg>
               </div>
-              <div class="page-footer__team-section__icon">
+              <div class="page-footer__team-section-icon">
                 <svg class="icon-footer" width="20px" height="20px">
                   <use href="/Icons/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
@@ -377,7 +378,7 @@
     </div>
   </div>
     <!-- Modal-->
-    <div class="request-service__modal" data-modal>
+    <div class="request-service__modal is-hidden" data-modal>
       <div class="request-service__modal-content">
         <button data-modal-close class="request-service__close-btn">
           <svg width="11" height="11">
